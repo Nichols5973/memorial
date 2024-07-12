@@ -245,3 +245,126 @@ main .section.highlight {
 main .columns-container  {
   background-color: #F3F2F6;
 } 
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    min-width: 290px;
+    font-size: 1.3rem;
+}
+.calculator .screen {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding: 0 0 15px 0;
+    font-size: 5.5rem;
+    width: 290px;
+    height: 150px;
+    overflow-x: hidden;
+}
+.calculator .keyboard {
+    width: 290px;
+    height: 350px;
+}
+/* first row */
+.keyboard .row:first-child .sub-col:not(:last-child) {
+    background-color: var(--function-keys);
+    color: var(--background-color);
+}
+.keyboard .row:first-child .sub-col:last-child {
+    background-color: var(--operator-keys);
+    color: #800000;
+}
+/* second row, third row, fourth row and fifth row */
+.keyboard .row:nth-child(2) .sub-col:not(:last-child),
+.keyboard .row:nth-child(3) .sub-col:not(:last-child),
+.keyboard .row:nth-child(4) .sub-col:not(:last-child),
+.keyboard .row:nth-child(5) .sub-col:not(:last-child) {
+    background-color: var(--digit-keys);
+    color: #008000;
+}
+.keyboard .row:nth-child(2) .sub-col:last-child,
+.keyboard .row:nth-child(3) .sub-col:last-child,
+.keyboard .row:nth-child(4) .sub-col:last-child,
+.keyboard .row:nth-child(5) .sub-col:last-child {
+    background-color: var(--operator-keys);
+    color: #000080;
+}
+.selected_operation[data-value='clear'],
+.selected_operation[data-value='%'],
+.selected_operation[data-value='+/-'] {
+    animation: background-anim-fn .8s ease-out;
+}
+.selected_operation[data-value='='] {
+    animation: background-anim-equals .8s ease-out;
+}
+/* Select every operator button except clear, %, +/- and = */
+.selected_operation[data-button-type='operator']:not(.selected_operation[data-value='clear']):not(.selected_operation[data-value='%']):not(.selected_operation[data-value='+/-']):not(.selected_operation[data-value='=']) {
+    background-color: #d4d4d2;
+    color: var(--operator-keys);
+    transition: background-color, color .8s ease-out;
+}
+@keyframes background-anim-fn {
+    0% { background-color: var(--function-keys); }
+    50% { background-color: #800080;  }
+    100% { background-color: var(--function-keys); }
+}
+@keyframes background-anim-equals {
+    0% { background-color: var(--operator-keys); }
+    50% { background-color: #008080;  }
+    100% { background-color: var(--operator-keys); }
+}
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+.sub-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+    height: 86%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 21%;
+    flex: 0 0 21%;
+    max-width: 21%;
+    border-radius: 50%;
+    transition: background-color .8s ease-out;
+}
+.row:last-child > .sub-col:first-child {
+    display: flex;
+    justify-content: start;
+    padding-left: 25px;
+    width: 47%;
+    -ms-flex: 0 0 47%;
+    flex: 0 0 47%;
+    max-width: 47%;
+    border-radius: 100px 100px 100px 100px;
+    transition: background-color .8s ease-out;
+}
+.keyboard .row {
+    justify-content: space-between;
+    height: 20%;
+}
+@media only screen and (min-width: 1500px) {
+    .calculator {
+        min-height: calc(500px / .7);
+        min-width: calc(290px / .7);
+        font-size: 1.7rem;
+    }
+    .calculator .screen {
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+        padding: 0 0 15px 0;
+        font-size: 7rem;
+        width: calc(290px / .7);
+        height: calc(150px / .7);
+        overflow-x: hidden;
+    }
+    .calculator .keyboard {
+        width: calc(290px / .7);
+        height: calc(350px / .7);
+    }
+}
