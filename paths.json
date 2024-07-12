@@ -1,0 +1,8 @@
+{
+  "mappings": [
+    "/content/Alphasense/:/",
+    "/content/Alphasense/placeholders:/placeholders.json",
+    "/graphql:/graphql",
+    "/content/Alphasense.resource/icons/:/icons/"
+  ]
+}
