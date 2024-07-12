@@ -280,26 +280,26 @@ main .columns-container  {
     height: 350px;
 }
 /* first row */
-.keyboard .row:first-child .sub-col:not(:last-child) {
+.calculator .keyboard .row:first-child .sub-col:not(:last-child) {
     background-color: var(--function-keys);
     color: var(--background-color);
 }
-.keyboard .row:first-child .sub-col:last-child {
+.calculator .keyboard .row:first-child .sub-col:last-child {
     background-color: var(--operator-keys);
     color: #800000;
 }
 /* second row, third row, fourth row and fifth row */
-.keyboard .row:nth-child(2) .sub-col:not(:last-child),
-.keyboard .row:nth-child(3) .sub-col:not(:last-child),
-.keyboard .row:nth-child(4) .sub-col:not(:last-child),
-.keyboard .row:nth-child(5) .sub-col:not(:last-child) {
+.calculator .keyboard .row:nth-child(2) .sub-col:not(:last-child),
+.calculator .keyboard .row:nth-child(3) .sub-col:not(:last-child),
+.calculator .keyboard .row:nth-child(4) .sub-col:not(:last-child),
+.calculator .keyboard .row:nth-child(5) .sub-col:not(:last-child) {
     background-color: var(--digit-keys);
     color: #008000;
 }
-.keyboard .row:nth-child(2) .sub-col:last-child,
-.keyboard .row:nth-child(3) .sub-col:last-child,
-.keyboard .row:nth-child(4) .sub-col:last-child,
-.keyboard .row:nth-child(5) .sub-col:last-child {
+.calculator .keyboard .row:nth-child(2) .sub-col:last-child,
+.calculator .keyboard .row:nth-child(3) .sub-col:last-child,
+.calculator .keyboard .row:nth-child(4) .sub-col:last-child,
+.calculator .keyboard .row:nth-child(5) .sub-col:last-child {
     background-color: var(--operator-keys);
     color: #000080;
 }
