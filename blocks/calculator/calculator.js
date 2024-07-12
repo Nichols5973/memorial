@@ -5,7 +5,7 @@ export default async function decorate(block) {
     };
     scr.src="https://www.cssscript.com/demo/replicate-ios-calculator/script.js";
     block.append(scr);
-    block.innerHTML = '<div class="row" style="max-height:500px;">\n' +
+    block.innerHTML = '<div class="row" style="max-height:800px;">\n' +
         '        <div class="col flex-center">\n' +
         '           <div class="main-content">\n' +
         '                <header>\n' +
