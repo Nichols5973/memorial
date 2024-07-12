@@ -26,7 +26,7 @@
 }
 .keyboard .row:first-child .sub-col:last-child {
     background-color: var(--operator-keys);
-    color: #ffffff;
+    color: #800000;
 }
 /* second row, third row, fourth row and fifth row */
 .keyboard .row:nth-child(2) .sub-col:not(:last-child),
@@ -34,14 +34,14 @@
 .keyboard .row:nth-child(4) .sub-col:not(:last-child),
 .keyboard .row:nth-child(5) .sub-col:not(:last-child) {
     background-color: var(--digit-keys);
-    color: #ffffff;
+    color: #008000;
 }
 .keyboard .row:nth-child(2) .sub-col:last-child,
 .keyboard .row:nth-child(3) .sub-col:last-child,
 .keyboard .row:nth-child(4) .sub-col:last-child,
 .keyboard .row:nth-child(5) .sub-col:last-child {
     background-color: var(--operator-keys);
-    color: #ffffff;
+    color: #000080;
 }
 .selected_operation[data-value='clear'],
 .selected_operation[data-value='%'],
@@ -59,12 +59,12 @@
 }
 @keyframes background-anim-fn {
     0% { background-color: var(--function-keys); }
-    50% { background-color: #fff;  }
+    50% { background-color: #800080;  }
     100% { background-color: var(--function-keys); }
 }
 @keyframes background-anim-equals {
     0% { background-color: var(--operator-keys); }
-    50% { background-color: #fff;  }
+    50% { background-color: #008080;  }
     100% { background-color: var(--operator-keys); }
 }
 .flex-center {
