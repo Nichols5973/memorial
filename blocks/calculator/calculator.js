@@ -1,5 +1,5 @@
 export default async function decorate(block) {
-    block.append('let first_number = "0";\n' +
+    block.innerHTML = '<script>let first_number = "0";\n' +
         'let second_number = "0";\n' +
         'let result = "0";\n' +
         'let current_operator;\n' +
@@ -135,8 +135,7 @@ export default async function decorate(block) {
         '        : clear_button.textContent = \'C\'\n' +
         '\n' +
         '    \n' +
-        '}');
-    block.innerHTML = '<div class="row">\n' +
+        '}</script><div class="row">\n' +
         '        <div class="col flex-center">\n' +
         '           <div class="main-content">\n' +
         '                <header>\n' +
