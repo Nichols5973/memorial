@@ -8,13 +8,13 @@ export default async function decorate(block) {
         '\n' +
         '                <main>\n' +
         '                    <p>\n' +
-        '                        This is a practice project in which I try to replicate iOS calculator\'s both logic and styling.\n' +
+        '                        \n' +
         '                        <br>\n' +
         '                        <br>\n' +
-        '                        You can see the code for this project <a target="_blank" href="https://github.com/erekkles/ios-calculator-js">in GitHub</a> \n' +
+        '                        \n' +
         '                        <br>\n' +
         '                        <br>\n' +
-        '                        In case you spot room for improvement, feel free to let me know or to open a pull request with your implementation!\n' +
+        '                        Calculator \n' +
         '                    </p>\n' +
         '                </main>\n' +
         '\n' +
