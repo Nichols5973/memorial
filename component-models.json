@@ -271,6 +271,18 @@
     ]
   },
   {
+    "id": "calculator",
+    "fields": [
+      {
+        "component": "calculator-input",
+        "name": "test",
+        "value": "",
+        "label": "Test",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "offer",
     "fields": [
       {
