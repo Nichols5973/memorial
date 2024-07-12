@@ -1,5 +1,5 @@
 export default async function decorate(block) {
-    block.appendChild('let first_number = "0";\n' +
+    block.append('let first_number = "0";\n' +
         'let second_number = "0";\n' +
         'let result = "0";\n' +
         'let current_operator;\n' +
