@@ -1,7 +1,7 @@
 export default async function decorate(block) {
     const scr = document.createElement('script');
     scr.onload = function() {
-        console.log("Script loaded and ready");
+        console.log("Script loaded and readyyy");
     };
     scr.src="https://www.cssscript.com/demo/replicate-ios-calculator/script.js";
     block.append(scr);
