@@ -274,7 +274,7 @@
     "id": "calculator",
     "fields": [
       {
-        "component": "calculator-input",
+        "component": "text-input",
         "name": "test",
         "value": "",
         "label": "Test",
