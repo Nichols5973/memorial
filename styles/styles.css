@@ -42,7 +42,7 @@
 
   --digit-keys: #505050;
     --operator-keys: #FF9500;
-    --background-color: #D3D3D3;
+    --background-color: #fff;
     --function-keys: #a2a2a2;
 }
 * {
