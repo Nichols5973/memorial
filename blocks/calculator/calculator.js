@@ -3,6 +3,7 @@ export default async function decorate(block) {
     scr.onload = function() {
         console.log("Script loaded and readyyy");
     };
+    scr.setAttribute('type', 'module');
     scr.text='let first_number = "0";\n' +
         'let second_number = "0";\n' +
         'let result = "0";\n' +
