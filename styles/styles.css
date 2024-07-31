@@ -16,7 +16,7 @@
   --link-hover-color: #869ead;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #FFBE00;
+  --highlight-background-color: #FFCD55;
   --text-color: #0E1318;
 
   /* fonts */
@@ -172,7 +172,7 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
+  background-color: #FFBE00;
   cursor: pointer;
 }
 
