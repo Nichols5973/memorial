@@ -162,8 +162,8 @@ a.button:any-link, button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: #FFCD55;
-  background-color: var(--link-color);
+  color: #000000;
+  background-color: #FFCD55;
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
